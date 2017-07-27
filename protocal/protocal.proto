@@ -1,5 +1,5 @@
 syntax = "proto2";
-package example;
+package protocal;
 
 enum FOO { X = 17; };
 
