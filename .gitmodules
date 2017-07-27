@@ -3,7 +3,7 @@
 	url = git://github.com/go-sql-driver/mysql.git
 [submodule "src/github.com/golang/protobuf"]
 	path = src/github.com/golang/protobuf
-	url = git://github.com/golang/protobuf.git
+	url = https://github.com/golang/protobuf.git
 [submodule "src/github.com/gorilla/websocket"]
 	path = src/github.com/gorilla/websocket
 	url = git://github.com/gorilla/websocket.git
