@@ -4,12 +4,23 @@ import (
 	"net"
 	"time"
 	"fmt"
+	"flag"
 	"protocal"
 	"encoding/binary"
 	"github.com/golang/protobuf/proto"
+	"github.com/golang/glog"
 )
 
+func init(){
+	flag.Parse()
+}
+
 func main() {
+	defer func(){
+		glog.Flush()
+	}()
+
+	glog.Info("hello")
 	conn, err := net.Dial("tcp", "127.0.0.1:3563")
 	if err != nil {
 		panic(err)
