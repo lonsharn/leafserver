@@ -7,7 +7,12 @@ import (
 	"server/game"
 	"server/gate"
 	"server/login"
+	"flag"
 )
+
+func init(){
+	flag.Parse()
+}
 
 func main() {
 	lconf.LogLevel = conf.Server.LogLevel

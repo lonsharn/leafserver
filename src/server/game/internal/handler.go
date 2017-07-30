@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/name5566/leaf/log"
+	"github.com/golang/glog"
 	//"github.com/name5566/leaf/gate"
 	"reflect"
 	"protocal"
@@ -23,7 +23,7 @@ func handleHello(args []interface{}) {
 	//a := args[1].(gate.Agent)
 
 	// 输出收到的消息的内容
-	log.Debug("label=%v", m.GetLabel())
+	glog.Infof("label=%v", m.GetLabel())
 
 	// 给发送者回应一个 Hello 消息
 	/*
