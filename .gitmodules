@@ -9,7 +9,7 @@
 	url = git://github.com/gorilla/websocket.git
 [submodule "src/github.com/name5566/leaf"]
 	path = src/github.com/name5566/leaf
-	url = git://github.com/name5566/leaf.git
+	url = git://github.com/lonsharn/leaf.git
 [submodule "src/github.com/golang/glog"]
 	path = src/github.com/golang/glog
-	url = https://github.com/golang/glog.git
+	url = https://github.com/lonsharn/glog.git
