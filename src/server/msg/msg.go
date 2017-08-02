@@ -9,5 +9,5 @@ import (
 var Processor = protobuf.NewProcessor()
 
 func init() {
-	Processor.Register(&protocal.Test{})
+	Processor.Register(10, 2, &protocal.Test{})
 }

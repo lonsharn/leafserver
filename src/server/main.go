@@ -8,6 +8,7 @@ import (
 	"server/gate"
 	"server/login"
 	"flag"
+	"github.com/golang/glog"
 )
 
 func init(){
@@ -15,6 +16,7 @@ func init(){
 }
 
 func main() {
+	defer glog.Flush()
 	lconf.LogLevel = conf.Server.LogLevel
 	lconf.LogPath = conf.Server.LogPath
 	lconf.LogFlag = conf.LogFlag
